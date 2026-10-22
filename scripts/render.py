@@ -187,13 +187,19 @@ def to_svg(frames, theme, duration):
     fs, lh = 13, 15.6
     cw = fs * 0.6
     pad = 10
-    width = round(W * cw + pad * 2)
-    height = round(H * lh + pad * 2)
+    # crop to the area any frame actually draws in, so there's no empty margin
+    rows = [r for r in range(H) if any("".join(b[r * W:(r + 1) * W]).strip() for b, _ in frames)]
+    cols = [c for c in range(W) if any(b[r * W + c] != " " for b, _ in frames for r in range(H))]
+    m = 4
+    vx = pad + cols[0] * cw - m
+    vy = pad + rows[0] * lh - m
+    width = round((cols[-1] - cols[0] + 1) * cw + 2 * m)
+    height = round((rows[-1] - rows[0] + 1) * lh + 2 * m)
     n = len(frames)
     pct = 100 / n
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
-        f'viewBox="0 0 {width} {height}" xml:space="preserve" role="img" aria-label="Rotating 3D ASCII computer">',
+        f'viewBox="{vx:.1f} {vy:.1f} {width} {height}" xml:space="preserve" role="img" aria-label="Rotating 3D ASCII computer">',
         "<style>",
         f"text{{font:{fs}px ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;"
         f"white-space:pre;fill:{theme['body']}}}",
