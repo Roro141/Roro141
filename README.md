@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/monitor-dark.svg">
-  <img src="assets/monitor-light.svg" alt="A rotating 3D ASCII computer whose screen types: whoami, roha fatima, full stack dev, currently building learnmips.com" width="380">
+  <img src="assets/monitor-light.svg" alt="A rotating 3D ASCII computer whose screen types: whoami, roha fatima, full stack dev, currently building planner" width="380">
 </picture>
 
 ### Hi, I'm Roha Fatima
@@ -29,7 +29,7 @@ I build web apps end to end, from React front ends to Python and Java back ends.
 
 | project | what it is | built with |
 |---|---|---|
-| [**learnmips.com**](https://www.learnmips.com) | Gamified platform for learning MIPS assembly: an in-browser editor with live register and memory views, guided tutorials, puzzles, and binary/hex math practice | Next.js · React |
+| [**learnmips.com**](https://www.learnmips.com) | Platform for learning MIPS assembly: an in-browser editor with live register and memory views, guided tutorials, puzzles, and binary/hex math practice | Next.js · React |
 | [**Portfolio**](https://github.com/Roro141/CS_Portfolio) | My personal portfolio site | JavaScript · HTML · CSS |
 
 </details>
