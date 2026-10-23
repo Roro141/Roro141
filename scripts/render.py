@@ -2,15 +2,9 @@
 """
 3D ASCII monitor -> animated SVG for a GitHub profile README.
 
-A tiny software renderer: box geometry is sampled into surface points,
-rotated, perspective-projected onto a character grid, depth-buffered,
-backface-culled and shaded with a luminance ramp. The monitor's screen
-is texture-mapped with a typing terminal. Every frame becomes a <g> in
-one SVG, and CSS keyframes flip through them (GitHub strips JS, but
-CSS animation inside an <img> SVG still plays).
 
 Usage:
-  python scripts/render.py              # auto: latest pushed repo via GitHub API
+  python scripts/render.py              
   python scripts/render.py --offline    # skip the API, use config fallback
 """
 import argparse, json, math, os, sys, urllib.request
