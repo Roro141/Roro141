@@ -1,11 +1,12 @@
 # Settings for the 3D ASCII monitor on your profile.
 # Edit, commit, and the GitHub Action re-renders the animation.
+#where the real data lives
 
 github_user: Roro141
 
 # shown on the monitor screen (keep each under ~36 characters)
 name: roha fatima
-role: full stack dev · cs @ utd
+role: full stack dev · cs @ utd 
 
 # "currently building" line.
 # Leave pin_project empty to auto-use your most recently pushed public repo.
@@ -14,8 +15,8 @@ pin_project: ""
 pin_description: ""
 
 # used if the GitHub API is unreachable
-fallback_project: learnmips.com
-fallback_description: gamified mips assembly
+fallback_project: planner
+fallback_description: personal life manager
 
 # repos that should never show up as "currently building"
 exclude_repos:
