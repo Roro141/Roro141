@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="164" viewBox="0 0 520 164" role="img" aria-label="Spotify: almost ready: connect spotify secrets by see scripts/spotify_auth.py">
+<style>
+@keyframes spin { to { transform: rotate(360deg) } }
+@keyframes eq { from { transform: scaleY(0.2) } to { transform: scaleY(1) } }
+.disc { transform-origin: 80px 80px;  }
+.eq { transform-box: fill-box; transform-origin: bottom; transform: scaleY(0.25); }
+text { font-family: ui-rounded, 'SF Pro Rounded', 'Nunito', 'Segoe UI', system-ui, sans-serif; }
+.lcd { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+</style>
+<defs>
+  <radialGradient id="cd" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.4" stop-color="#F9D6E2"/>
+    <stop offset="0.65" stop-color="#C9D6F4"/><stop offset="0.85" stop-color="#DDEBC8"/>
+    <stop offset="1" stop-color="#F4B8C8"/>
+  </radialGradient>
+  <clipPath id="lbl"><circle cx="80" cy="80" r="26"/></clipPath>
+</defs>
+<rect x="4" y="10" width="512" height="148" rx="30" fill="#B9CF9A" stroke="#3F6336" stroke-width="4"/>
+<rect x="430" y="2" width="72" height="20" rx="2" fill="#F4B8C8" opacity="0.85" transform="rotate(-6 466 12)"/>
+<circle cx="80" cy="84" r="64" fill="#FBF4E2" stroke="#3F6336" stroke-width="4"/>
+<g transform="translate(0 4)">
+  <g class="disc">
+    <circle cx="80" cy="80" r="54" fill="url(#cd)" stroke="#E58AA8" stroke-width="2"/>
+    <path d="M80 80 L80 26 A54 54 0 0 1 118 42 Z" fill="#FFFFFF" opacity="0.55"/>
+    <path d="M80 80 L80 134 A54 54 0 0 1 42 118 Z" fill="#FFFFFF" opacity="0.3"/>
+    <circle cx="80" cy="80" r="26" fill="#F4B8C8"/>
+    <circle cx="80" cy="80" r="26" fill="none" stroke="#A8406A" stroke-width="2.5"/>
+    <circle cx="80" cy="80" r="5" fill="#FBF4E2" stroke="#3F6336" stroke-width="1.5"/>
+  </g>
+</g>
+<rect x="164" y="26" width="132" height="24" rx="12" fill="#FBF4E2" stroke="#3F6336" stroke-width="2"/>
+<text x="230" y="43" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="1" fill="#3F6336">✿ almost ready</text>
+<text x="166" y="78" font-size="21" font-weight="700" fill="#3F6336">connect spotify secrets</text>
+<text x="166" y="100" font-size="15" font-weight="500" fill="#A8406A">see scripts/spotify_auth.py</text>
+<rect x="164" y="112" width="214" height="30" rx="8" fill="#3F6336"/>
+<text class="lcd" x="176" y="132" font-size="13" fill="#DDEBC8">POND·MAN ES-01  ♡ spotify</text>
+<rect x="384" y="100" width="120" height="44" rx="10" fill="#3F6336"/>
+<rect class="eq" x="407" y="104" width="8" height="26" rx="3" fill="#DDEBC8" style="animation-delay:0s"/><rect class="eq" x="420" y="104" width="8" height="26" rx="3" fill="#DDEBC8" style="animation-delay:-0.4s"/><rect class="eq" x="433" y="104" width="8" height="26" rx="3" fill="#DDEBC8" style="animation-delay:-0.15s"/><rect class="eq" x="446" y="104" width="8" height="26" rx="3" fill="#DDEBC8" style="animation-delay:-0.7s"/><rect class="eq" x="459" y="104" width="8" height="26" rx="3" fill="#DDEBC8" style="animation-delay:-0.3s"/><rect class="eq" x="472" y="104" width="8" height="26" rx="3" fill="#DDEBC8" style="animation-delay:-0.55s"/>
+</svg>

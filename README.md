@@ -22,6 +22,10 @@ I build web apps end to end, from React front ends to Python and Java back ends.
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
+<br><br>
+
+<img src="assets/spotify.svg" alt="What I'm listening to on Spotify right now" width="460">
+
 </div>
 
 <details>
